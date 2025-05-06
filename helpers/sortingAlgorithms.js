@@ -1,7 +1,6 @@
 class SortingAlgorithms {
-    constructor({swapBars}){
-        this.swapBars = swapBars;
-    }
+    
+    
 
     bubbleSort(array){
         const swaps = [];
@@ -22,6 +21,8 @@ class SortingAlgorithms {
         }
         return swaps;
     }
+
+
 }
 
 export {
