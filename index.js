@@ -66,7 +66,8 @@ async function swapBars(barDivs, i, j) {
 
 const algorithms = [
     sortingAlgorithms.bubbleSort,
-    sortingAlgorithms.selectionSort
+    sortingAlgorithms.selectionSort,
+    sortingAlgorithms.insertionSort
 ]
 
 const solve = async () =>{
