@@ -5,10 +5,7 @@ class SortingAlgorithms {
     bubbleSort(array){
         const swaps = [];
         for (let i = array.length-1; i >0; i--) {
-
-            // Last i elements are already in place
             for (let j = 0; j <= i-1; j++) {
-                // Checking if item in the present iteration is greater than next iteration
                 if(array[j]>array[j+1]){
                     let temp=array[j];
                     array[j]=array[j+1];
