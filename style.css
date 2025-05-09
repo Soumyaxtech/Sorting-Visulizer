@@ -46,6 +46,8 @@ body {
     border-radius: 6px;
 }
 
+
+
 .bar.activate{
     background: #0056b3;
     transition-property: 0.3s;
