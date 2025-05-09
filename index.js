@@ -1,7 +1,7 @@
 import { sleep } from "./helpers/util.js";
 import { SortingAlgorithms } from "./helpers/sortingAlgorithms.js";
 
-let nBars = 10;
+let nBars = 15;
 
 let numbersbars = document.getElementById('numbersBars');
 
@@ -51,7 +51,7 @@ async function swapBars(barDivs, i, j) {
     barDivs[i].classList.add('activate');
     barDivs[j].style.left = `${5 + i * 30}px`;
     barDivs[j].classList.add('activate');
-    await sleep(300);
+    await sleep(350);
     barDivs[i].classList.remove('activate');
     barDivs[j].classList.remove('activate');
     let temp = barsDivs[i];
@@ -67,7 +67,8 @@ async function swapBars(barDivs, i, j) {
 const algorithms = [
     sortingAlgorithms.bubbleSort,
     sortingAlgorithms.selectionSort,
-    sortingAlgorithms.insertionSort
+    sortingAlgorithms.insertionSort,
+    sortingAlgorithms.quickSort
 ]
 
 const solve = async () =>{
